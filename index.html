@@ -33,6 +33,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
 </head>
 
 <body>
@@ -477,25 +478,7 @@ Python programming and Certified in Selenium.</li>
   
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script>
-    $("#submit-form1").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbw0OuIkmYpCZq1GveypZIKewu_RjegIS-ftNf8M4dNKpFkMy0G86ky8C8hX29WhZ2a3/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error")
-
-            }
-        })
-    })
-</script>
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -512,7 +495,25 @@ Python programming and Certified in Selenium.</li>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  
+  <script>
+    $("#submit-form1").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzeCuuI4ARcUGrM4XBw9BOjff9UNeuWDQBaTA-vQ8MKpgfcCissLxsj7QKhwcm3fKco6Q/exec",
+            data:$("#submit-form1").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 
 </body>
 
